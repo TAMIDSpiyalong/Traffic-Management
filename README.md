@@ -1,5 +1,5 @@
 # Computer Vision and Multi-object Tracking for Traffic Measurement from Campus Monitoring Cameras
-Files in the support function folder are the tracking, counting and mapping package. Essentially, this system is an integration of YOLOv5+Deep_SORT+Homography_Transformation for pedestrian and vehicle counting and mapping. Several packages are required to make the whole code work as follow.
+Files in the support function folder are the tracking, counting and mapping package. Essentially, this system is an integration of YOLOv5+Deep_SORT+Homography_Transformation for pedestrian and vehicle, and all other classes in COCO. Several packages are required to make the whole code work as follow. The CPU jupyter lab file is the main deployment on regular CPU with faster than real-time speed. 
 ### Dependencies
 - `YOLOv5`
 - `Deep-SORT`
