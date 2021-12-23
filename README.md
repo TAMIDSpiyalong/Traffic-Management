@@ -1,11 +1,11 @@
-# Traffic-Management
-Files in the support function folder are the tracking and mapping package. However, a few depending packages are also required to make the whole code work. 
+# YOLOv5+Deep-SORT+Homography Transformation
+Files in the support function folder are the tracking, counting and mapping package. However, a few depending packages are also required to make the whole code work. 
 ### Dependencies
 - `YOLOv5`
 - `Deep-SORT`
-- `opencv`
-- `matplotlib`
-- `pandas`
+- `Pytorch>1.9`
+- `Python>3.8`
+- `Tensorflow 1.0`
 
 
 ## How to use
