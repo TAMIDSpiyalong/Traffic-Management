@@ -1,5 +1,5 @@
-# YOLOv5+Deep-SORT+Homography Transformation for traffic management
-Files in the support function folder are the tracking, counting and mapping package. However, a few depending packages are also required to make the whole code work. 
+# 
+Files in the support function folder are the tracking, counting and mapping package. Essentially, this system is an integration of YOLOv5+Deep_SORT+Homography_Transformation for pedestrian and vehicle counting and mapping. Several packages are required to make the whole code work as follow.
 ### Dependencies
 - `YOLOv5`
 - `Deep-SORT`
