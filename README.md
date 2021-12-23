@@ -6,7 +6,7 @@ Files in the support function folder are the tracking, counting and mapping pack
 - `Pytorch>1.9`
 - `Python>3.8`
 - `Tensorflow 1.0`
-
+- `Labelme`
 
 ## How to use
 There are several attributes of the class VideoProcesser that you can control and should consider before implementing. They are threshold, waiting frame, studyzone definition, reference points definition, and same class overlap rate. 
