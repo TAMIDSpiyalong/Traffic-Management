@@ -9,7 +9,10 @@ Files in the support function folder are the tracking, counting and mapping pack
 - `Labelme`
 
 ## How to use
-There are several attributes of the class VideoProcesser that you can control and should consider before implementing. They are threshold, waiting frame, studyzone definition, reference points definition, and same class overlap rate. 
+The class VideoProcesser_CPU has the following attributes. 
+
+- threshold
+- waiting frame, studyzone definition, reference points definition, and same class overlap rate. 
 
 
 
