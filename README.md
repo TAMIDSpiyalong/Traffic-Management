@@ -11,8 +11,12 @@ Files in the support function folder are the tracking, counting and mapping pack
 ## How to use
 The class VideoProcesser_CPU has the following attributes. 
 
-- threshold
-- waiting frame, studyzone definition, reference points definition, and same class overlap rate. 
+- threshold Detection threshold which is luminence dependend (We suggest the two cluster mode).
+- img_size The input images will be resized to this dimension.
+- display Show and save the resulting videoin the same folder.
+- skipframe Skip detecting frames in order to get faster processing speed. Note the more skipped frames, the more like to mis-track objects.
+- studyzone Lableme polygon annotation on the image pixel coordinates including the reference points ({reference:[point1,point2,point3,point4]}) and study zones ({name:[COORDINATES]}). 
+- reference points list[point1,point2,point3,point4]. 
 
 
 
