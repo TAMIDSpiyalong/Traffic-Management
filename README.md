@@ -6,11 +6,13 @@ Several packages are required to make the whole code work as follow.The deployme
 - `P2PNET and SORT`. There is servere occlusion in the pedestrain videos, therefore we use a point based head detector and point based tracker to count the pedestrains. 
 
 ## How to use
-1. install lableme and load one screen shot of the camera. Defined study zone. 
-2. git clone detr, p2pnet, and sort.
-3. add the directories of above to the python sys.
-4. pass the video signal to main.py
-5. visualization. 
+1. Install lableme `pip install labelme` and load one screen shot of the camera and defined the study zones. 
+2. git clone detr, p2pnet, and SORT.
+`git clone https://github.com/facebookresearch/detr.git`
+`git clone https://github.com/TencentYoutuResearch/CrowdCounting-P2PNet.git`
+`git clone https://github.com/adipandas/multi-object-tracker`
+3. Add the directories above to the python sys in `mian.py`.
+4. pass the video path to `main.py` for now. Later the signal will be live feed. 
 
 
 ### Papers about this work:
