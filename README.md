@@ -1,12 +1,9 @@
-# Visual recognition for urban traffic data retrieval and analysis in major events using convolutional neural networks
-Files in the support function folder are the tracking, counting and mapping package. Essentially, this system is an integration of YOLOv5+Deep_SORT+Homography_Transformation for pedestrian and vehicle, and all other classes in COCO. Several packages are required to make the whole code work as follow. The CPU jupyter lab file is the main deployment on regular CPU with faster than real-time speed. 
-### Dependencies
-- `YOLOv5`
-- `Deep-SORT`
-- `Pytorch>1.9`
-- `Python>3.8`
-- `Tensorflow 1.0`
-- `Labelme`
+# Computer vision tools to extract game day data from cameras with visulization.
+Several packages are required to make the whole code work as follow.The deployment is designed to run on regular CPU with real-time speed. 
+### Supporting packages
+- `Labelme` This is a tool to design the study zones, i.e., where to count. Save the zone definition in a json file and pass its path to the main.py code. 
+- `DETR and SORT` This tool is selected due to the big size of the cars exiting the garage. DETR is suitable for these irregularly large object compared to YOLO seires. 
+- `P2PNET and SORT`. There is servere occlusion in the pedestrain videos, therefore we use a point based head detector and point based tracker to count the pedestrains. 
 
 ## How to use
 The class VideoProcesser_CPU has the following attributes. 
@@ -20,7 +17,7 @@ The class VideoProcesser_CPU has the following attributes.
 
 
 
-### LaTeX citation:
+### Papers about this work:
 
 @article{pi2022visual,
   title={Visual recognition for urban traffic data retrieval and analysis in major events using convolutional neural networks},
@@ -33,7 +30,20 @@ The class VideoProcesser_CPU has the following attributes.
   publisher={Springer}
 }
 
-Please cite the article if you use the dataset, model or method(s), or find the article useful in your research. Thank you!
+@article{pi2023lane,
+  title={Lane-specific speed analysis in urban work zones with computer vision},
+  author={Pi, Yalong and Duffield, Nick and Behzadan, Amir and Lomax, Tim},
+  journal={Traffic injury prevention},
+  pages={1--9},
+  year={2023},
+  publisher={Taylor \& Francis}
+}
 
+@incollection{pi2021computer,
+  title={Computer vision and multi-object tracking for traffic measurement from campus monitoring cameras},
+  author={Pi, Yalong and Duffield, Nick and Behzadan, Amir H and Lomax, Tim},
+  booktitle={Computing in Civil Engineering 2021},
+  pages={950--958}
+}
 
 
