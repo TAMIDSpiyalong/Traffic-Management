@@ -8,9 +8,9 @@ Several packages are required to make the whole code work as follow.The deployme
 ## How to use
 1. Install lableme `pip install labelme` and load one screen shot of the camera and defined the study zones. 
 2. git clone detr, p2pnet, and SORT.
-    `git clone https://github.com/facebookresearch/detr.git`
-    `git clone https://github.com/TencentYoutuResearch/CrowdCounting-P2PNet.git`
-    `git clone https://github.com/adipandas/multi-object-tracker`
+    <br> `git clone https://github.com/facebookresearch/detr.git`    
+    <br> `git clone https://github.com/TencentYoutuResearch/CrowdCounting-P2PNet.git`    
+    <br> `git clone https://github.com/adipandas/multi-object-tracker`    
 3. Add the directories above to the python sys in `mian.py`.
 4. pass the video path to `main.py` for now. Later the signal will be live feed. 
 
