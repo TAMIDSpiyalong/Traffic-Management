@@ -1,4 +1,4 @@
-# Computer vision tools to extract game day data from cameras with visulization.
+# Computer Vision Tools to Extract Traffic Data from Cameras.
 Several packages are required to make the whole code work as follow.The deployment is designed to run on regular CPU with real-time speed. 
 ### Supporting packages
 - `Labelme` This is a tool to design the study zones, i.e., where to count. Save the zone definition in a json file and pass its path to the main.py code. 
