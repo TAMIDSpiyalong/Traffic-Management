@@ -1,7 +1,8 @@
 # Computer Vision Tools to Extract Traffic Data from Cameras.
 Several packages are required to make the whole code work as follow.The deployment is designed to run on regular CPU with real-time speed. 
 ### Supporting packages
-- `Labelme` This is a tool to design the study zones, i.e., where to count. Save the zone definition in a json file and pass its path to the main.py code. 
+- `Labelme` was a tool to design the study zones, i.e., where to count. Save the zone definition in a json file and pass its path to the main.py code. 
+- USe https://www.robots.ox.ac.uk/~vgg/software/via/via.html for defining the study zones instead. Labelme is not working with some Windows 10/11 updates. 
 - `DETR and SORT` This tool is selected due to the big size of the cars exiting the garage. DETR is suitable for these irregularly large object compared to YOLO seires. 
 - `P2PNET and SORT`. There is servere occlusion in the pedestrain videos, therefore we use a point based head detector and point based tracker to count the pedestrains. 
 
