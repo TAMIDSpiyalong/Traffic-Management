@@ -9,6 +9,7 @@ A brief introduction to DETR and SORT can be found at (https://arxiv.org/abs/160
 
 ### Sample visualized SORT's tracking results
 ![SORT Vis](Pic2.png)
+
 The x-axis represents time (frame number) and the y-axis represents the positions of the tracked vehicle. Each object's trajectory is a line on this graph.
 # Installation
 Several packages are required to make the whole code work as follow.The deployment is designed to run on regular CPU with real-time speed. 
