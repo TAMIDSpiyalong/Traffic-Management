@@ -1,7 +1,7 @@
 # Computer Vision Tools to Extract Traffic Data from Cameras.
 ## Introduction
 This repository contains codes for the implementation of DETR (Facebook's Detection Transformer) and SORT (Simple Online and Realtime Tracking) algorithms in PyTorch with the goal of detecting and tracking vehicles in surveillance video cameras. 
-A brief introduction to ![DETR] (https://arxiv.org/abs/2005.12872) and ![SORT] (https://arxiv.org/abs/1602.00763) can be found at HERE and HERE.
+A brief introduction to ![alt text] (https://arxiv.org/abs/2005.12872 "Google") and ![SORT] (https://arxiv.org/abs/1602.00763) can be found at HERE and HERE.
 
 ## How the model works:
 The code loads the DETR model pre-trained on the COCO dataset using PyTorch's `torch.hub.load function`. The model is moved to the selected device (GPU or CPU) and set to evaluation mode.
