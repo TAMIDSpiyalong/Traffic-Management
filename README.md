@@ -7,8 +7,6 @@ A brief introduction to DETR and SORT can be found at (https://arxiv.org/abs/160
 ### The overall framework of the DETR model
 ![DETR_Arch](Pic1.png)
 
-### Sample visualized SORT's tracking results
-![SORT Vis](Pic2.png)
 
 The x-axis represents time (frame number) and the y-axis represents the positions of the tracked vehicle. Each object's trajectory is a line on this graph.
 # Installation
