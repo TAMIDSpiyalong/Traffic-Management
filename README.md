@@ -8,11 +8,10 @@ A brief introduction to DETR and SORT can be found at (https://arxiv.org/abs/160
 ![DETR_Arch](Pic1.png)
 
 
-The x-axis represents time (frame number) and the y-axis represents the positions of the tracked vehicle. Each object's trajectory is a line on this graph.
 # Installation
-Several packages are required to make the whole code work as follow.The deployment is designed to run on regular CPU with real-time speed. 
+Several packages are required to make the whole code work as follows. The deployment is designed to run on a regular CPU with real-time speed. 
 ### Supporting packages
-- `Labelme` was a tool to design the study zones, i.e., where to count. Save the zone definition in a json file and pass its path to the main.py code. 
+#- `Labelme` was a tool to design the study zones, i.e., where to count. Save the zone definition in a json file and pass its path to the main.py code. 
 - USe https://www.robots.ox.ac.uk/~vgg/software/via/via.html for defining the study zones instead. Labelme is not working with some Windows 10/11 updates. 
 - `DETR and SORT` This tool is selected due to the big size of the cars exiting the garage. DETR is suitable for these irregularly large object compared to YOLO seires. 
 - `P2PNET and SORT`. There is servere occlusion in the pedestrain videos, therefore we use a point based head detector and point based tracker to count the pedestrains. 
