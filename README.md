@@ -39,6 +39,7 @@ The code loads the DETR model pre-trained on the COCO dataset using PyTorch's `t
 ## Summary
 Overall, this code combines the power of the DETR model for object detection and the SORT algorithm for object tracking to analyze video data, detect objects, and track their movement over time. The output includes both visualized frames with bounding boxes and a saved tracking data file.
 
+
 ### Papers about this work:
 
 @article{pi2022visual,
