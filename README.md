@@ -5,7 +5,7 @@ A brief introduction to DETR and SORT can be found at (https://arxiv.org/abs/160
 
 
 ## The overall architecture
-
+![DETR_Arch](Pic1.png)
 
 
 # Installation
