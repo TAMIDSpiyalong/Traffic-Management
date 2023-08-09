@@ -1,4 +1,24 @@
 # Computer Vision Tools to Extract Traffic Data from Cameras.
+## Introduction
+This repository contains codes for the implementation of DETR (Facebook's Detection Transformer) and SORT (Simple Online and Realtime Tracking) algorithms in PyTorch with the goal of detecting and tracking vehicles in surveillance video cameras. 
+A brief introduction to [DETR]:https://arxiv.org/abs/2005.12872 and [SORT]:https://arxiv.org/abs/1602.00763 can be found at HERE and HERE.
+
+## How the model works:
+The code loads the DETR model pre-trained on the COCO dataset using PyTorch's `torch.hub.load function`. The model is moved to the selected device (GPU or CPU) and set to evaluation mode.
+
+1. The code reads a video file using OpenCV's VideoCapture and extracts its width, height, FPS, and other information.
+2. It initializes the SORT tracker (`tracker = SORT()`).
+3. It enters a loop where it processes each frame of the video, and performs object detection using the predict function, which uses the DETR model to generate bounding box predictions, confidences, and class labels for objects in the frame, and passes the detection results to the SORT tracker to perform object tracking, records tracking information (centroid coordinates and frame number) for each tracked object in the data dictionary.
+4. It saves the results and also displays them on video frames (e.g., detected bounding boxes with their corresponding confidence level, and object IDs).
+
+## Visualized demos for the model
+
+
+## The overall architecture
+
+
+
+# Installation
 Several packages are required to make the whole code work as follow.The deployment is designed to run on regular CPU with real-time speed. 
 ### Supporting packages
 - `Labelme` was a tool to design the study zones, i.e., where to count. Save the zone definition in a json file and pass its path to the main.py code. 
@@ -15,6 +35,17 @@ Several packages are required to make the whole code work as follow.The deployme
 3. Add the directories above to the python sys in `mian.py`.
 4. pass the video path to `main.py` for now. Later the signal will be live feed. 
 
+
+
+
+
+
+
+
+
+
+## Summary
+Overall, this code combines the power of the DETR model for object detection and the SORT algorithm for object tracking to analyze video data, detect objects, and track their movement over time. The output includes both visualized frames with bounding boxes and a saved tracking data file.
 
 ### Papers about this work:
 
